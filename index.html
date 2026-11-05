@@ -3,192 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#090909">
-<title>Dowa Country TV</title>
+<meta name="theme-color" content="#101820">
+<title>DOWA COUNTRY TV | Entertainment Without Borders</title>
 <style>
-:root{--bg:#08090b;--panel:#141519;--red:#f20d19;--gold:#f5bd35;--muted:#aeb2bb}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#fff;font-family:Arial,Helvetica,sans-serif}
-header{position:sticky;top:0;z-index:5;background:#090a0dee;border-bottom:1px solid #292b31;padding:14px 5%;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{font-weight:900;font-size:22px;line-height:1.05}.brand span{color:var(--gold)}.tag{font-size:10px;color:#bbb;letter-spacing:1px}
-nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}a,button{color:white;text-decoration:none}nav a{font-size:13px;color:#ddd}
-button,.btn{border:0;border-radius:7px;padding:11px 16px;background:var(--red);font-weight:700;cursor:pointer}
-button.secondary{background:#24262c;border:1px solid #454750}
-.wrap{max-width:1200px;margin:auto;padding:0 22px}
-.hero{margin:24px auto 22px;min-height:330px;border-radius:16px;padding:42px;background:linear-gradient(90deg,#08090bf2 0%,#08090bbd 52%,#08090b30 100%),radial-gradient(circle at 78% 30%,#8d251d 0,#341416 32%,#111 68%);border:1px solid #34343a;display:flex;align-items:center}
-.hero-content{max-width:600px}.eyebrow{color:var(--gold);font-weight:bold;letter-spacing:2px;font-size:12px}
-h1{font-size:clamp(38px,6vw,65px);line-height:.98;margin:12px 0}h1 span{color:var(--gold)}
-.hero p{color:#ddd;line-height:1.6;max-width:520px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
-.section{margin:30px auto}.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.section h2{font-size:21px;margin:0}.muted{color:var(--muted);font-size:13px}
-.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.category{background:var(--panel);border:1px solid #292b31;border-radius:10px;padding:17px 12px;text-align:center;font-weight:bold}.category small{display:block;color:var(--muted);font-weight:normal;margin-top:5px}
-.movies{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.movie{background:var(--panel);border:1px solid #292b31;border-radius:10px;overflow:hidden}.poster{height:160px;display:grid;place-items:center;text-align:center;padding:12px;font-size:20px;font-weight:900;background:linear-gradient(145deg,#5a1717,#171923 60%,#a66d20)}.movie:nth-child(2n) .poster{background:linear-gradient(145deg,#173e43,#171923 60%,#9b6127)}.movie:nth-child(3n) .poster{background:linear-gradient(145deg,#45305f,#171923 60%,#a52a2a)}.movie-info{padding:11px}.movie-info strong{font-size:14px}.badge{display:inline-block;font-size:10px;border-radius:4px;padding:4px 6px;background:#126b42;margin-bottom:7px}.badge.premium{background:#9a6a0a}.movie-info p{font-size:11px;color:var(--muted);margin:7px 0 0}
-.trailers{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.trailer{background:var(--panel);border:1px solid #292b31;border-radius:12px;overflow:hidden}.trailer iframe{display:block;width:100%;aspect-ratio:16/9;border:0;background:#000}.trailer-info{padding:13px}.trailer-info strong{display:block;margin-bottom:5px}.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.info{padding:20px;background:var(--panel);border:1px solid #292b31;border-radius:10px}.info h3{margin:0 0 8px;color:var(--gold)}.info p{color:#c5c7ce;font-size:13px;line-height:1.5}
-footer{border-top:1px solid #292b31;margin-top:45px;padding:25px 5%;color:#aaa;text-align:center;font-size:12px}
-#search{background:#17191e;border:1px solid #383a43;border-radius:7px;padding:10px;color:white;width:190px}
-@media(max-width:850px){.trailers{grid-template-columns:1fr}nav{gap:10px}nav a{font-size:12px}.categories{grid-template-columns:repeat(3,1fr)}.movies{grid-template-columns:repeat(3,1fr)}.poster{height:140px}}
-@media(max-width:560px){header{align-items:flex-start;flex-wrap:wrap}.brand{font-size:19px}nav{order:3;width:100%;overflow:auto;flex-wrap:nowrap;padding:5px 0}#search{width:145px}.hero{padding:25px 20px;min-height:300px}.categories{grid-template-columns:repeat(2,1fr)}.movies{grid-template-columns:repeat(2,1fr)}.info-grid{grid-template-columns:1fr}.poster{height:135px}}
+:root{--bg:#101820;--panel:#192630;--gold:#f2b705;--text:#f7f7f7;--muted:#b9c4cc}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+header{padding:22px 5%;background:linear-gradient(120deg,#101820,#203746);border-bottom:3px solid var(--gold)}
+.brand{font-size:clamp(25px,5vw,40px);font-weight:900;letter-spacing:1px}.tag{color:var(--gold);margin-top:6px}
+nav{display:flex;gap:18px;flex-wrap:wrap;padding:14px 5%;background:#14212b;position:sticky;top:0;z-index:5}
+nav a{color:white;text-decoration:none;font-weight:bold;font-size:14px}nav a:hover{color:var(--gold)}
+.hero{padding:50px 5%;background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.25)),url('https://images.unsplash.com/photo-1489599849927-2ee91c?auto=format&fit=crop&w=1600&q=80') center/cover}
+.hero h1{font-size:clamp(30px,6vw,54px);max-width:700px;margin:0 0 12px}.hero p{max-width:620px;color:#e2e8ec;line-height:1.6}
+.btn{display:inline-block;background:var(--gold);color:#111;padding:12px 18px;border-radius:7px;text-decoration:none;font-weight:bold;margin-top:8px}
+main{padding:10px 5% 45px}.section{margin:35px 0}.section h2{border-left:5px solid var(--gold);padding-left:12px}
+.note{color:var(--muted);font-size:13px;line-height:1.5}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid #2d414e;border-radius:12px;overflow:hidden}
+.video{aspect-ratio:16/9;background:#000}.video iframe{width:100%;height:100%;border:0}
+.cardbody{padding:14px}.card h3{margin:0 0 8px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
+.categories{display:flex;gap:10px;flex-wrap:wrap}.chip{background:#263a47;border:1px solid #3c5666;padding:10px 14px;border-radius:20px}
+footer{padding:25px 5%;background:#0b1116;color:var(--muted);text-align:center;font-size:13px}
+@media(max-width:600px){nav{gap:12px}.hero{padding-top:35px;padding-bottom:35px}}
 </style>
 </head>
 <body>
 <header>
- <div><div class="brand">🎬 DOWA <span>COUNTRY TV</span></div><div class="tag">ENTERTAINMENT WITHOUT BORDERS</div></div>
- <nav><a href="#home" data-en="Home" data-ny="Poyambira">Home</a><a href="#trailers" data-en="Trailers" data-ny="Ma Trailer">Trailers</a><a href="#free" data-en="Free Movies" data-ny="Mafilimu aulere">Free Movies</a><a href="#premium" data-en="Premium" data-ny="Premium">Premium</a><a href="#categories" data-en="Categories" data-ny="Magulu">Categories</a></nav>
- <div style="display:flex;gap:8px;align-items:center"><input id="search" placeholder="Search movies..." aria-label="Search movies"><button class="secondary" id="lang">EN / NY</button></div>
+  <div class="brand">DOWA COUNTRY TV</div>
+  <div class="tag">Entertainment Without Borders</div>
 </header>
-<main class="wrap" id="home">
-<section class="hero">
- <div class="hero-content"><div class="eyebrow">PROUDLY MALAWIAN 🇲🇼</div><h1>DOWA<br><span>COUNTRY TV</span></h1><p id="intro">Your home for great stories. Discover Chichewa films and international entertainment in one place.</p><div class="actions"><a class="btn" href="#free" id="watch">▶ Start Watching</a><a class="btn" style="background:#282a30;border:1px solid #666" href="#premium" id="explore">Explore Premium</a></div></div>
+<nav>
+  <a href="#home">HOME</a><a href="#categories">CATEGORIES</a><a href="#malawi">MALAWI</a><a href="#nollywood">NOLLYWOOD</a><a href="#international">INTERNATIONAL</a>
+</nav>
+<section class="hero" id="home">
+  <h1>Welcome to DOWA COUNTRY TV</h1>
+  <p>Discover African stories and entertainment from Malawi, Nigeria and around the world. Watch official trailers here and follow the original publishers for full movies.</p>
+  <a class="btn" href="#nollywood">Explore trailers</a>
 </section>
-<section class="section" id="categories"><div class="section-head"><h2 id="cat-title">Explore Categories</h2><span class="muted">Choose what you love</span></div>
-<div class="categories"><div class="category">🇲🇼 Chichewa<small>Local stories</small></div><div class="category">🇳🇬 Nigerian<small>Films</small></div><div class="category">🇮🇳 Indian<small>Movies</small></div><div class="category">🇹🇷 Turkish<small>Series</small></div><div class="category">🇰🇷 Korean<small>Shows</small></div><div class="category">🌍 International<small>More stories</small></div></div></section>
-<section class="section" id="trailers">
- <div class="section-head"><h2>🎞️ Official Movie Trailers</h2><span class="muted">Watch previews from official channels</span></div>
- <div class="trailers">
-  <article class="trailer">
-   <iframe src="https://www.youtube-nocookie.com/embed/xjDjIWPwcPU" title="Marvel Studios Black Panther Official Trailer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-   <div class="trailer-info"><strong>Black Panther — Official Trailer</strong><span class="muted">International · Marvel Entertainment</span></div>
-  </article>
-  <article class="trailer">
-   <iframe src="https://www.youtube-nocookie.com/embed/RlOB3UALvrQ" title="Black Panther Wakanda Forever Official Teaser" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-   <div class="trailer-info"><strong>Black Panther: Wakanda Forever — Official Teaser</strong><span class="muted">International · Marvel Entertainment</span></div>
-  </article>
- </div>
- <p class="muted" style="margin-top:10px">These are previews embedded from the official publisher's YouTube channel. DOWA COUNTRY TV does not own these films.</p>
+<main>
+<section class="section" id="categories">
+  <h2>Explore Categories</h2>
+  <div class="categories"><span class="chip">🇲🇼 Chichewa & Malawi</span><span class="chip">🇳🇬 Nollywood</span><span class="chip">🇮🇳 Indian</span><span class="chip">🇹🇷 Turkish</span><span class="chip">🇰🇷 Korean</span><span class="chip">🌍 International</span></div>
 </section>
-<section class="section" id="free"><div class="section-head"><h2 id="free-title">🍿 Free Movies</h2><span class="muted">Sample titles — add licensed films in the admin area</span></div>
-<div class="movies" id="free-list">
- <article class="movie"><div class="poster">A VILLAGE<br>STORY</div><div class="movie-info"><span class="badge">FREE</span><br><strong>A Village Story</strong><p>Drama · Chichewa</p></div></article>
- <article class="movie"><div class="poster">THE<br>JOURNEY</div><div class="movie-info"><span class="badge">FREE</span><br><strong>The Journey</strong><p>Adventure · English</p></div></article>
- <article class="movie"><div class="poster">LOVE IN<br>DOWA</div><div class="movie-info"><span class="badge">FREE</span><br><strong>Love in Dowa</strong><p>Romance · Chichewa</p></div></article>
- <article class="movie"><div class="poster">NEW<br>BEGINNINGS</div><div class="movie-info"><span class="badge">FREE</span><br><strong>New Beginnings</strong><p>Drama · English</p></div></article>
- <article class="movie"><div class="poster">THE<br>MISSION</div><div class="movie-info"><span class="badge">FREE</span><br><strong>The Mission</strong><p>Action · International</p></div></article>
-</div></section>
-<section class="section" id="premium"><div class="section-head"><h2 id="premium-title">👑 Premium Movies</h2><span class="muted">Member-only titles</span></div>
-<div class="movies">
- <article class="movie"><div class="poster">GOLDEN<br>HORIZON</div><div class="movie-info"><span class="badge premium">PREMIUM</span><br><strong>Golden Horizon</strong><p>Drama · Premium</p></div></article>
- <article class="movie"><div class="poster">CITY OF<br>SECRETS</div><div class="movie-info"><span class="badge premium">PREMIUM</span><br><strong>City of Secrets</strong><p>Thriller · Premium</p></div></article>
- <article class="movie"><div class="poster">LAST<br>CHANCE</div><div class="movie-info"><span class="badge premium">PREMIUM</span><br><strong>Last Chance</strong><p>Romance · Premium</p></div></article>
- <article class="movie"><div class="poster">WILD<br>LAND</div><div class="movie-info"><span class="badge premium">PREMIUM</span><br><strong>Wild Land</strong><p>Adventure · Premium</p></div></article>
- <article class="movie"><div class="poster">BEYOND<br>THE LAKE</div><div class="movie-info"><span class="badge premium">PREMIUM</span><br><strong>Beyond the Lake</strong><p>Drama · Premium</p></div></article>
-</div></section>
-<section class="section"><div class="section-head"><h2 id="how-title">How it works</h2></div><div class="info-grid">
- <div class="info"><h3>1. Create an account</h3><p>Register with your details to keep your watchlist and membership together.</p></div>
- <div class="info"><h3>2. Choose Free or Premium</h3><p>Enjoy free titles or choose a premium plan when membership is available.</p></div>
- <div class="info"><h3>3. Pay securely</h3><p>Airtel Money and TNM Mpamba are planned payment options. Payments are not active in this preview.</p></div>
-</div></section>
-</main>
-
-<section class="section" id="admin">
-  <div class="section-head"><h2>🛠 Admin Dashboard — Demo</h2><span class="muted">Manage sample movie listings</span></div>
-  <div class="info">
-    <p class="muted">Browser-only demonstration: entries are saved on this device, not published to a live website.</p>
-    <form id="movie-form" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px">
-      <input required id="movie-name" placeholder="Movie title" style="padding:12px;border-radius:7px;border:1px solid #444;background:#090a0d;color:white">
-      <select id="movie-category" style="padding:12px;border-radius:7px;background:#090a0d;color:white;border:1px solid #444">
-        <option>Chichewa</option><option>Nigerian</option><option>Indian</option><option>Turkish</option><option>Korean</option><option>International</option>
-      </select>
-      <select id="movie-type" style="padding:12px;border-radius:7px;background:#090a0d;color:white;border:1px solid #444">
-        <option value="Free">Free</option><option value="Premium">Premium</option>
-      </select>
-      <input id="movie-video" placeholder="Direct video URL (optional)" style="padding:12px;border-radius:7px;border:1px solid #444;background:#090a0d;color:white">
-      <button type="submit">＋ Add Movie</button>
-    </form>
-    <p id="admin-message" class="muted" aria-live="polite"></p>
-    <div id="admin-movies" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px"></div><h3 style="margin-top:24px">Your added movies</h3><div id="custom-catalogue" class="movies"></div>
+<section class="section" id="malawi">
+  <h2>🇲🇼 Malawi Movie Trailers</h2>
+  <p class="note">Official trailer embedded from the film publisher's YouTube channel. DOWA COUNTRY TV does not claim ownership of this film.</p>
+  <div class="grid">
+    <article class="card"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/6YR-zlzAMMs" title="Welcome to Maula Prison Official Trailer" loading="lazy" allowfullscreen></iframe></div><div class="cardbody"><h3>Welcome to Maula Prison</h3><p>Official trailer · 4Kaya Filmz Inc.</p></div></article>
   </div>
 </section>
-
-<footer>© 2026 Dowa Country TV · Entertainment Without Borders · Malawi 🇲🇼<br><br>Preview website. Only upload or stream films you own or are licensed to distribute. No real accounts, video playback or payments are connected yet.</footer>
-<script>
-let ny=false;
-document.getElementById('lang').addEventListener('click',()=>{
- ny=!ny;document.documentElement.lang=ny?'ny':'en';
- document.querySelectorAll('nav a').forEach(a=>a.textContent=a.dataset[ny?'ny':'en']);
- document.getElementById('intro').textContent=ny?'Kwanu kwa nkhani zabwino. Pezani mafilimu a Chichewa ndi zosangalatsa za padziko lonse pamalo amodzi.':'Your home for great stories. Discover Chichewa films and international entertainment in one place.';
- document.getElementById('watch').textContent=ny?'▶ Yambani Kuonera':'▶ Start Watching';
- document.getElementById('explore').textContent=ny?'Onani Premium':'Explore Premium';
- document.getElementById('cat-title').textContent=ny?'Sankhani Magulu':'Explore Categories';
- document.getElementById('free-title').textContent=ny?'🍿 Mafilimu Aulere':'🍿 Free Movies';
- document.getElementById('premium-title').textContent=ny?'👑 Mafilimu a Premium':'👑 Premium Movies';
- document.getElementById('how-title').textContent=ny?'Mmene Zimagwirira Ntchito':'How it works';
-});
-document.getElementById('search').addEventListener('input',e=>{
- const q=e.target.value.toLowerCase();
- document.querySelectorAll('.movie').forEach(card=>card.style.display=card.textContent.toLowerCase().includes(q)?'':'none');
-});
-</script>
-
-
-<div id="player-modal" style="display:none;position:fixed;inset:0;background:#000e;z-index:20;padding:7vh 5vw">
- <div style="max-width:850px;margin:auto;background:#141519;border:1px solid #444;border-radius:12px;padding:15px">
-  <div style="display:flex;justify-content:space-between;align-items:center"><strong id="player-title">Movie preview</strong><button type="button" class="secondary" id="close-player">Close ✕</button></div>
-  <video id="movie-player" controls playsinline style="width:100%;max-height:65vh;background:#000;margin-top:12px"></video>
-  <p class="muted">Playback requires a direct video-file URL and permission to stream that film.</p>
- </div>
-</div>
-
-<script>
-const savedMovies = JSON.parse(localStorage.getItem('dctv_demo_movies') || '[]');
-const adminList = document.getElementById('admin-movies');
-const catalogue = document.getElementById('custom-catalogue');
-function el(tag, value, cls) {
-  const x = document.createElement(tag); x.textContent = value;
-  if (cls) x.className = cls;
-  return x;
-}
-function renderMovies() {
-  adminList.innerHTML = ''; catalogue.innerHTML = '';
-  savedMovies.forEach((m, i) => {
-    const row = el('div', '', 'info');
-    row.append(el('strong', m.title), el('p', m.category + ' · ' + m.type, 'muted'));
-    const remove = el('button', 'Remove', 'secondary');
-    remove.type = 'button';
-    remove.onclick = () => {
-      savedMovies.splice(i, 1);
-      localStorage.setItem('dctv_demo_movies', JSON.stringify(savedMovies));
-      renderMovies();
-    };
-    row.append(remove); adminList.append(row);
-
-    const card = el('article', '', 'movie');
-    const poster = el('div', '▶ ' + m.title, 'poster');
-    const info = el('div', '', 'movie-info');
-    info.append(el('span', m.type.toUpperCase(), 'badge' + (m.type === 'Premium' ? ' premium' : '')));
-    info.append(el('br', ''), el('strong', m.title), el('p', m.category));
-    const play = el('button', m.video ? '▶ Play' : 'Video URL needed', 'secondary');
-    play.type = 'button'; play.disabled = !m.video;
-    play.onclick = () => {
-      document.getElementById('player-title').textContent = m.title;
-      const video = document.getElementById('movie-player');
-      video.src = m.video;
-      document.getElementById('player-modal').style.display = 'block';
-      video.play().catch(() => {});
-    };
-    info.append(play); card.append(poster, info); catalogue.append(card);
-  });
-}
-renderMovies();
-document.getElementById('movie-form').addEventListener('submit', e => {
-  e.preventDefault();
-  const movie = {
-    title: document.getElementById('movie-name').value.trim(),
-    category: document.getElementById('movie-category').value,
-    type: document.getElementById('movie-type').value,
-    video: document.getElementById('movie-video').value.trim()
-  };
-  if (!movie.title) return;
-  if (movie.video && !/^https?:\\/\\//i.test(movie.video)) {
-    document.getElementById('admin-message').textContent = 'Video URL must begin with http:// or https://';
-    return;
-  }
-  savedMovies.push(movie);
-  localStorage.setItem('dctv_demo_movies', JSON.stringify(savedMovies));
-  e.target.reset(); renderMovies();
-  document.getElementById('admin-message').textContent = 'Movie added to this browser demo.';
-});
-document.getElementById('close-player').onclick = () => {
-  const video = document.getElementById('movie-player');
-  video.pause(); video.removeAttribute('src'); video.load();
-  document.getElementById('player-modal').style.display = 'none';
-};
-</script>
-</body></html>
+<section class="section" id="nollywood">
+  <h2>🇳🇬 Nollywood Movie Trailers</h2>
+  <p class="note">These are previews embedded from the publishing channel on YouTube. For full films, visit and follow the original channel.</p>
+  <div class="grid">
+    <article class="card"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/cGQLgJBtNks" title="The Document Official Trailer" loading="lazy" allowfullscreen></iframe></div><div class="cardbody"><h3>The Document</h3><p>Official trailer · Nollywood RealNollyTV</p></div></article>
+    <article class="card"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/5xZdwltVaYA" title="My First Child Official Trailer" loading="lazy" allowfullscreen></iframe></div><div class="cardbody"><h3>My First Child</h3><p>Official trailer · Nollywood RealNollyTV</p></div></article>
+  </div>
+</section>
+<section class="section" id="international">
+  <h2>🌍 International Movie Trailers</h2>
+  <div class="grid">
+    <article class="card"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/xjDjIWPwcPU" title="Black Panther Official Trailer" loading="lazy" allowfullscreen></iframe></div><div class="cardbody"><h3>Black Panther</h3><p>Official trailer · Marvel Entertainment</p></div></article>
+    <article class="card"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/RlOB3UALvrQ" title="Black Panther Wakanda Forever Official Teaser" loading="lazy" allowfullscreen></iframe></div><div class="cardbody"><h3>Black Panther: Wakanda Forever</h3><p>Official teaser · Marvel Entertainment</p></div></article>
+  </div>
+</section>
+<p class="note">Note: This is a free front-end website prototype. It does not yet have user accounts, secure admin tools, online payments, or video hosting. Only add films you own or have permission to distribute. YouTube videos remain hosted by their respective publishers.</p>
+</main>
+<footer>© 2026 DOWA COUNTRY TV · Entertainment Without Borders · Malawi 🇲🇼</footer>
+</body>
+</html>
